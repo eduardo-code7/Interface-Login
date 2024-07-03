@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #4e3434;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    overflow: hidden;
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    transition: width 0.3s, height 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+#img {
+    background: rgb(173, 49, 49) url('img/porta.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+}
+
+article {
+    padding: 10px;
+    flex: 1;
+}
+
+section > article > h1 {
+    text-align: center;
+}
+
+section > article > p {
+    padding: 10px;
+}
+form > input[type=submit]{
+    background-color: #5f5f5ff1;
+    color: white;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 4px;
+    margin-top: 20px;  
+    border: none;
+    border-radius: 5px;   
+} 
+main input[type=submit]:hover{
+    background-color: #3b3b3be5;
+}
+ main #iemail ,#isenha{
+    width: 50%;
+    height: 30px;
+    font-size: 1em;
+    margin-bottom: 10px;
+
+}
+main span{
+
+}
+ a {
+    background-color: #ffffff;
+    color: rgb(24, 3, 3);
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+   box-shadow: 2px 2px 2px solid black;
+   border-radius: 5px;
+   border: 1px solid;
+ }
+   
+a:hover{
+    background-color: rgba(110, 110, 110, 0.418);
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #610061, #008a9c);
+    }
+    section {
+        width: 80vw;
+        flex-direction: row;
+    }
+    #img {  
+        width: 35%;
+        height: auto; 
+    }
+    article {
+        width: 70%;
+        padding: 20px;
+    }
+    section > article > p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 999px) {
+    body {
+        background-image: linear-gradient(to top, #610061, #00899b);
+    }
+    section {
+        width: 950px;
+        flex-direction: row;
+    }
+    #img {
+        width: 50%;
+        height: auto;
+    }
+    article {
+        width: 50%;
+        padding: 20px;
+    }
+    section > article > p {
+        font-size: 1.2em;
+    }
+}
