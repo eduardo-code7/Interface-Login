@@ -61,14 +61,13 @@ main input[type=submit]:hover{
     background-color: #3b3b3be5;
 }
  main #iemail ,#isenha{
-    width: 50%;
+    width: 60%;
     height: 30px;
     font-size: 1em;
-    margin-bottom: 10px;
-
+    
 }
-main span{
-
+main #iemail{
+    margin-bottom: 15px;
 }
  a {
     background-color: #ffffff;
